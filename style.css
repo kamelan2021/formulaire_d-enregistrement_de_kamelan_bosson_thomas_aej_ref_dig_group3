@@ -1,0 +1,121 @@
+body{
+    background-color: turquoise;;
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.form-gauche, .form-droit{
+    width: 40%;
+}
+div{
+    display: flex;
+    flex-direction: column;
+     
+}
+ div input,select{
+    padding: 5px 0 5px 4px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    font-size: 20px;
+} 
+
+div input:hover,select:hover{
+    box-shadow: 2px 2px 4px rgb(40, 161, 91);
+} 
+input::placeholder{
+    color:#1c87c9;
+    opacity: 1;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span{
+    margin-left: 5px;
+}
+/* style appliqué à la div entete  */
+.entete{
+    width: 60%; 
+    margin: 0 auto;
+    padding-left: 20px;
+}
+.envoye,.affiche{
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* align-self: center; */
+    width: 60%;
+    margin-top: 15px;
+    padding: 5px 0 5px 4px;
+    box-shadow: 2px 2px 4px rgb(3, 3, 248);
+}
+button:hover{
+    background-color: violet;
+}
+ @media (min-width:901px) and (max-width:1160px) { 
+    .form{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(69, 114, 167);
+    }
+    .form-gauche, .form-droit, .envoye,.affiche{
+        margin: 10px auto;
+    }
+    input::placeholder{
+        font-size: 16px;
+        font-weight: bolder;
+        opacity: 1;
+        font-family: sans-serif;
+    }
+    label{
+        color: #fff;
+        font-size: 16px;
+        font-weight: bolder;
+        opacity: 1;
+        font-family: monospace, sans-serif;
+    }
+    span{
+        color: red;
+    }
+}
+@media (max-width:900) { 
+    .form{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(69, 114, 167);
+        margin: 10px 0;
+    }
+    .form-gauche, .form-droit, .envoye,.affiche{
+        margin: 5px 0;
+    }
+    .form-gauche, .form-droit{
+        margin: auto 0;
+    }
+    input::placeholder{
+        font-size: 1.5em;
+        font-weight: bolder;
+        opacity: 1;
+        font-family: sans-serif;
+    }
+    label{
+        color: #fff;
+        font-size: 2em;
+        font-weight: bolder;
+        opacity: 1;
+        font-family: monospace, sans-serif;
+    }
+    span{
+        color: red;
+    }
+    
+}

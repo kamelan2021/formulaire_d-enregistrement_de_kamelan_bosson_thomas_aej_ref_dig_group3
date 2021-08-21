@@ -1,0 +1,78 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    color: rgb(189, 72, 72);
+
+}
+table{
+    border-collapse: collapse ;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: tan;
+}
+tr,td,th{
+    border-collapse: collapse ;
+    /*border: 1px solid rgb(189, 72, 72);*/
+    height: 30px;
+    padding: 5px 10px;
+}
+
+th{
+    background-color: steelblue;
+    /* width: auto; */
+}
+td{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width: auto; */
+}
+ tbody tr :nth-child(2n){
+    background-color: slategray;
+} 
+p{
+    text-align: center;
+    font-size: 1.5em;
+    font-style: oblique;
+}
+p a{
+    color: dodgerblue;
+    font-weight: bold;
+    opacity: .8;
+    position: fixed;
+    bottom: 0;
+    right: auto;
+    left: auto;
+}
+
+ @media (max-width:1105px){
+     table{
+        width: auto;
+        margin: 25px 5px auto 5px;
+    } 
+    td,th{
+        width: auto;
+        font-size: 16px;
+        font-weight: bolder;
+        opacity: 1;
+    }
+     h1{
+        text-align: center; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 5px auto 0 20px ;
+        font-size: 16px;
+    }
+    p a{
+        /* text-align: center;  */
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0 auto 0 20px ;
+        
+    }
+    
+}  
